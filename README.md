@@ -186,5 +186,5 @@ This project is developed as a **Minor Project** for academic purposes.
 ---
 
 <p align="center">
-  Built with ❤️ using React, TypeScript, and Google Gemini AI
+  Built  using React, TypeScript, and Google Gemini AI
 </p>
