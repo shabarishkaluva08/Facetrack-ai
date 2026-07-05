@@ -29,6 +29,8 @@ live image acquisition via a connected Webcam. Once a profile is successfully sa
 the new data has synchronized with the active database.
 
 
+
+
 ### 📅 Academic Schedule Dashboard
 
 <img width="1917" height="912" alt="Screenshot 2026-07-05 163345" src="https://github.com/user-attachments/assets/e242a4c3-a1a8-410e-9f7e-17ecdef50ff8" />
@@ -38,6 +40,8 @@ integrated Timetable Generator, administrators fine-tune operational periods, re
 Period Count, and the exact Period Duration in minutes. Clicking Generate Sequence automatically maps out the daily institutional schedule. The AI tracking 
 backend relies entirely on this generated timeline to correctly categorize, timestamp, and validate student biometric scans against their designated class hours.
 
+
+
 ### 🔬 Biometric Presence Matrix (Scanner)
 <img width="1860" height="902" alt="Screenshot 2026-07-05 164728" src="https://github.com/user-attachments/assets/abdf754c-905b-4065-9367-f6aa4f6dc6de" />
 
@@ -46,6 +50,7 @@ backend relies entirely on this generated timeline to correctly categorize, time
 - **AI bounding boxes** drawn live on the video feed — green for newly marked, orange for already marked, red for unknown
 - **Automatic attendance logging** with confidence scores
 - **Period-aware scanning** — attendance is tied to a specific class period
+
 
 
 
@@ -59,6 +64,8 @@ comprehensive tracking data for verified students, capturing their unique Identi
 records by custom date ranges. An Export CSV button provides instant report generation, allowing operators to download the entire logged dataset into a standard 
 spreadsheet format for external administrative review.
 
+
+
 ### 🧠 Attendance Intelligence Dashboard
 <img width="1895" height="910" alt="Screenshot 2026-07-05 164911" src="https://github.com/user-attachments/assets/8d3438d1-729d-4c15-858d-d0beaf5df351" />
 
@@ -67,6 +74,8 @@ spreadsheet format for external administrative review.
   50% match) to verify whether the system encountered a true registered student or an unverified anomaly. Users can refine their audit searches using the 
   integrated subject identity search bar and strict custom date-range boundaries. A dedicated Neural Audit Export button allows administrators to extract these 
   filtered high-precision datasets for deeper compliance checks and security reporting.
+
+
 
 ### 👨‍🎓 Student Directory
 <img width="1901" height="905" alt="Screenshot 2026-07-05 164412" src="https://github.com/user-attachments/assets/9fcafa9c-8e0a-4f4f-aaf1-1631dae59a5a" />
@@ -77,6 +86,7 @@ from the main folder-style directory opens their detailed Biometric Profile pane
 ID. This interface provides robust dataset management capabilities, allowing administrators to modify existing data, delete lower-quality facial models, or 
 capture and add new angles to the student’s Facial Datasets (tracking up to the 8-image limit). A dedicated Save Changes button ensures updates are instantly 
 committed to re-train or refine the active AI matching profile
+
 
 
 
