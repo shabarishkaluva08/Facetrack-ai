@@ -7,7 +7,7 @@ biometric scanning via webcam or CCTV (Raspberry Pi) to automatically identify e
 
 ## ✨ Features
 
-### 📊 Intelligence Dashboard
+## 📊 Intelligence Dashboard
 <img width="1917" height="898" alt="Screenshot 2026-07-05 163421" src="https://github.com/user-attachments/assets/c498966f-e594-4e15-90fb-c56672b2dee8" />
 
 The Intelligence Dashboard serves as the central command center for FaceTrack AI, providing a high-level overview of daily student activity and enrollment 
@@ -19,7 +19,7 @@ student engagement.
 
 
 
-### 📝 Register Student Dashboard
+## 📝 Register Student Dashboard
 <img width="1882" height="912" alt="Screenshot 2026-07-05 164344" src="https://github.com/user-attachments/assets/939c1282-f593-4cc2-a3aa-15347923ce19" />
 
 The Register Student interface handles onboarding by provisioning new profiles directly into the system's biometric matrix. The Registration Form features 
@@ -31,7 +31,7 @@ the new data has synchronized with the active database.
 
 
 
-### 📅 Academic Schedule Dashboard
+## 📅 Academic Schedule Dashboard
 
 <img width="1917" height="912" alt="Screenshot 2026-07-05 163345" src="https://github.com/user-attachments/assets/e242a4c3-a1a8-410e-9f7e-17ecdef50ff8" />
 
@@ -42,7 +42,7 @@ backend relies entirely on this generated timeline to correctly categorize, time
 
 
 
-### 🔬 Biometric Presence Matrix (Scanner)
+## 🔬 Biometric Presence Matrix (Scanner)
 <img width="1860" height="902" alt="Screenshot 2026-07-05 164728" src="https://github.com/user-attachments/assets/abdf754c-905b-4065-9367-f6aa4f6dc6de" />
 
 - **Real-time facial recognition** powered by Google Gemini 2.5 Flash Vision API
@@ -54,7 +54,7 @@ backend relies entirely on this generated timeline to correctly categorize, time
 
 
 
-### 🕒 Temporal Registry Dashboard
+## 🕒 Temporal Registry Dashboard
 <img width="1905" height="907" alt="Screenshot 2026-07-05 164757" src="https://github.com/user-attachments/assets/f5f9339c-9b45-464d-8048-bc6f7dbcf01c" />
 
 
@@ -66,7 +66,7 @@ spreadsheet format for external administrative review.
 
 
 
-### 🧠 Attendance Intelligence Dashboard
+## 🧠 Attendance Intelligence Dashboard
 <img width="1895" height="910" alt="Screenshot 2026-07-05 164911" src="https://github.com/user-attachments/assets/8d3438d1-729d-4c15-858d-d0beaf5df351" />
 
   The Attendance Intelligence view offers an advanced analytical layer designed specifically for data auditing based on AI prediction metrics. This dashboard 
@@ -77,7 +77,7 @@ spreadsheet format for external administrative review.
 
 
 
-### 👨‍🎓 Student Directory
+## 👨‍🎓 Student Directory
 <img width="1901" height="905" alt="Screenshot 2026-07-05 164412" src="https://github.com/user-attachments/assets/9fcafa9c-8e0a-4f4f-aaf1-1631dae59a5a" />
 <img width="1891" height="921" alt="Screenshot 2026-07-05 172211" src="https://github.com/user-attachments/assets/84f31611-3069-4a1c-b649-b0c5f1ca916c" />
 
@@ -90,7 +90,7 @@ committed to re-train or refine the active AI matching profile
 
 
 
-### ⚙️ System Configuration
+## ⚙️ System Configuration
 <img width="1912" height="896" alt="Screenshot 2026-07-05 164446" src="https://github.com/user-attachments/assets/50de2d7a-de95-48d1-82de-fb4c70559c41" />
 
 - **Gemini API Key** input (stored securely in browser localStorage)
