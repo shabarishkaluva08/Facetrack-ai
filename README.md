@@ -68,7 +68,7 @@ A modern, AI-powered facial recognition attendance management system built with 
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/facetrack-ai.git
+git clone https://github.com/shabarishkaluva08/Facetrack-ai.git
 cd facetrack-ai
 
 # Install dependencies
