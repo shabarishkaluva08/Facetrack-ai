@@ -1,39 +1,88 @@
 # FaceTrack — AI-Powered Biometric Attendance System
 
-A modern, AI-powered facial recognition attendance management system built with React, TypeScript, and Google Gemini Vision API. FaceTrack uses real-time biometric scanning via webcam or CCTV (Raspberry Pi) to automatically identify enrolled students and log their attendance — eliminating manual roll calls entirely.
+A modern, AI-powered facial recognition attendance management system built with React, TypeScript, and Google Gemini Vision API. FaceTrack uses real-time 
+biometric scanning via webcam or CCTV (Raspberry Pi) to automatically identify enrolled students and log their attendance — eliminating manual roll calls entirely.
 
 ---
 
 ## ✨ Features
 
+### 📊 Intelligence Dashboard
+<img width="1917" height="898" alt="Screenshot 2026-07-05 163421" src="https://github.com/user-attachments/assets/c498966f-e594-4e15-90fb-c56672b2dee8" />
+
+The Intelligence Dashboard serves as the central command center for FaceTrack AI, providing a high-level overview of daily student activity and enrollment 
+metrics. This view aggregates core operational data into four key performance cards tracking Registered Students, Verified Today, Attendance Rate, and Pending 
+actions. A real-time Live Pulse indicator and a Neural Core Status widget ensure administrators that the underlying facial recognition models and data streams are 
+active and online. Finally, an interactive Weekly Retention Trend area chart visualizes data continuity by tracking unique scans per day to monitor long-term 
+student engagement.
+
+
+
+
+### 📝 Register Student Dashboard
+<img width="1882" height="912" alt="Screenshot 2026-07-05 164344" src="https://github.com/user-attachments/assets/939c1282-f593-4cc2-a3aa-15347923ce19" />
+
+The Register Student interface handles onboarding by provisioning new profiles directly into the system's biometric matrix. The Registration Form features 
+dedicated inputs for the student's name and an institutional ID, which includes strict validation limiting it to a maximum of 10 alphanumeric characters with no 
+special characters allowed. To build the facial recognition profile, administrators can upload up to 8 images per student using either the Import file feature or 
+live image acquisition via a connected Webcam. Once a profile is successfully saved, it appears instantly in the sidebar's Live Registry panel, confirming that 
+the new data has synchronized with the active database.
+
+
+### 📅 Academic Schedule Dashboard
+
+<img width="1917" height="912" alt="Screenshot 2026-07-05 163345" src="https://github.com/user-attachments/assets/e242a4c3-a1a8-410e-9f7e-17ecdef50ff8" />
+
+The Academic Schedule module serves as the primary time-configuration interface that directly drives the student scanning and attendance logic. Through the 
+integrated Timetable Generator, administrators fine-tune operational periods, recess slots, and session timings by specifying a precise Start Time, the total 
+Period Count, and the exact Period Duration in minutes. Clicking Generate Sequence automatically maps out the daily institutional schedule. The AI tracking 
+backend relies entirely on this generated timeline to correctly categorize, timestamp, and validate student biometric scans against their designated class hours.
+
 ### 🔬 Biometric Presence Matrix (Scanner)
+<img width="1860" height="902" alt="Screenshot 2026-07-05 164728" src="https://github.com/user-attachments/assets/abdf754c-905b-4065-9367-f6aa4f6dc6de" />
+
 - **Real-time facial recognition** powered by Google Gemini 2.5 Flash Vision API
 - **Dual input sources**: Local webcam or remote CCTV/IP camera (Raspberry Pi MJPEG stream)
 - **AI bounding boxes** drawn live on the video feed — green for newly marked, orange for already marked, red for unknown
 - **Automatic attendance logging** with confidence scores
 - **Period-aware scanning** — attendance is tied to a specific class period
 
+
+
+### 🕒 Temporal Registry Dashboard
+<img width="1905" height="907" alt="Screenshot 2026-07-05 164757" src="https://github.com/user-attachments/assets/f5f9339c-9b45-464d-8048-bc6f7dbcf01c" />
+
+
+The Temporal Registry serves as the system's immutable log, providing a historical ledger of all biometric attendance verification events. This dashboard displays 
+comprehensive tracking data for verified students, capturing their unique Identity (name and institutional ID), precise Timestamp records, verification Status 
+(e.g., Present), and the neural network's AI Confidence percentage. Administrators can filter through the ledger using a built-in search bar or narrow down 
+records by custom date ranges. An Export CSV button provides instant report generation, allowing operators to download the entire logged dataset into a standard 
+spreadsheet format for external administrative review.
+
+### 🧠 Attendance Intelligence Dashboard
+<img width="1895" height="910" alt="Screenshot 2026-07-05 164911" src="https://github.com/user-attachments/assets/8d3438d1-729d-4c15-858d-d0beaf5df351" />
+
+  The Attendance Intelligence view offers an advanced analytical layer designed specifically for data auditing based on AI prediction metrics. This dashboard 
+  allows administrators to filter student logs dynamically using a Min Confidence threshold slider, making it possible to isolate low-confidence scans (such as a 
+  50% match) to verify whether the system encountered a true registered student or an unverified anomaly. Users can refine their audit searches using the 
+  integrated subject identity search bar and strict custom date-range boundaries. A dedicated Neural Audit Export button allows administrators to extract these 
+  filtered high-precision datasets for deeper compliance checks and security reporting.
+
 ### 👨‍🎓 Student Directory
-- Enroll students with first name, last name, and institutional ID
-- Capture up to **8 facial samples** per student via webcam for AI reference
-- Deep profile editing slide-out panel with photo management (add/delete samples)
-- Bulk selection and deletion of student profiles
+<img width="1901" height="905" alt="Screenshot 2026-07-05 164412" src="https://github.com/user-attachments/assets/9fcafa9c-8e0a-4f4f-aaf1-1631dae59a5a" />
+<img width="1891" height="921" alt="Screenshot 2026-07-05 172211" src="https://github.com/user-attachments/assets/84f31611-3069-4a1c-b649-b0c5f1ca916c" />
 
-### 📊 Attendance Intelligence (Reports)
-- Advanced filtering by **student identity**, **date range**, and **minimum AI confidence threshold**
-- Dynamic data table rendering with color-coded confidence bars
-- **Neural Audit Export** — download filtered attendance data as a CSV file
+The Student Directory acts as a comprehensive database management hub where administrators can view, search, and update all enrolled profiles. Selecting a student 
+from the main folder-style directory opens their detailed Biometric Profile panel, displaying their system UUID, editable name fields, and unique Institutional 
+ID. This interface provides robust dataset management capabilities, allowing administrators to modify existing data, delete lower-quality facial models, or 
+capture and add new angles to the student’s Facial Datasets (tracking up to the 8-image limit). A dedicated Save Changes button ensures updates are instantly 
+committed to re-train or refine the active AI matching profile
 
-### 📜 Temporal Registry (History)
-- Immutable log of all biometric verification events
-- Search, date-range filtering, and CSV export
-- **Refresh controls** — clear attendance by specific date or clear all history
 
-### 📅 Schedule Management
-- Define class periods with start/end times and instructor names
-- Auto-generated from system settings (start time, period duration, total periods)
 
 ### ⚙️ System Configuration
+<img width="1912" height="896" alt="Screenshot 2026-07-05 164446" src="https://github.com/user-attachments/assets/50de2d7a-de95-48d1-82de-fb4c70559c41" />
+
 - **Gemini API Key** input (stored securely in browser localStorage)
 - **Temporal parameters**: school start time, default period duration, total periods
 - Auto-generates schedule on save
@@ -43,6 +92,7 @@ A modern, AI-powered facial recognition attendance management system built with 
 ## 🛠️ Tech Stack
 
 | Layer         | Technology                                |
+
 |---------------|-------------------------------------------|
 | **Framework** | React 19 + TypeScript                     |
 | **Build Tool**| Vite 7                                    |
