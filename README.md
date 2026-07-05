@@ -101,22 +101,19 @@ committed to re-train or refine the active AI matching profile
 
 ## 🛠️ Tech Stack
 
+| Layer | Technology |
+| :--- | :--- |
+| **Framework** | React 19 + TypeScript |
+| **Build Tool** | Vite 7 |
+| **Styling** | Tailwind CSS 3 |
+| **AI Engine** | Google Gemini 2.5 Flash (`@google/genai`) |
+| **Routing** | React Router DOM v7 |
+| **Charts** | Recharts |
+| **Icons** | Lucide React |
+| **Animations** | Framer Motion |
+| **State** | Custom `useLocalStorage` hook |
+| **IDs** | UUID v13 |
 
-| Layer          | Technology                                |
-
-|-------------- -|-------------------------------------------|
-| **Framework**  | React 19 + TypeScript                     |
-| **Build Tool** | Vite 7                                    |
-| **Styling**    | Tailwind CSS 3                            |
-| **AI Engine**  | Google Gemini 2.5 Flash (`@google/genai`) |
-| **Routing**    | React Router DOM v7                       |
-| **Charts**     | Recharts                                  |
-| **Icons**      | Lucide React                              |
-| **Animations** | Framer Motion                             |
-| **State**      | Custom `useLocalStorage` hook             |
-| **IDs**        | UUID v13                                  |
-|-------------- -|-------------------------------------------|
----
 
 ## 🚀 Getting Started
 
