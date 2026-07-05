@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-sans antialiased overflow-x-hidden selection:bg-primary/30 min-h-screen;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-surface border border-border shadow-xl shadow-slate-200/50;
+  }
+}
